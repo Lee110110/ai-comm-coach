@@ -1,0 +1,17 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+  background-color: #f5f7fa;
+}
+
+.el-menu {
+  border-right: none !important;
+}
+
+.el-card {
+  border-radius: 8px !important;
+}
+
+.el-tag {
+  border-radius: 4px !important;
+}
