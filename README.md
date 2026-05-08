@@ -127,13 +127,13 @@ npm install
 
 终端 1 — 启动后端：
 ```bash
-cd C:\Users\Elvis\ai-comm-coach\backend
+cd ~\ai-comm-coach\backend
 PYTHONPATH=. python -m uvicorn app.main:app --port 8000 --reload
 ```
 
 终端 2 — 启动前端：
 ```bash
-cd C:\Users\Elvis\ai-comm-coach\frontend
+cd ~\ai-comm-coach\frontend
 npm run dev
 ```
 
@@ -223,33 +223,7 @@ npm run dev
 5. 点击「获取沟通策略」— AI 会基于档案生成专属建议
 6. 在急救话术/消息润色中选择关联此人，AI 会参考档案给出更精准的建议
 
----
 
-## 项目结构
-
-```
-ai-comm-coach/
-├── backend/                    # 后端 (FastAPI)
-│   ├── .env                    # 环境配置（需填入 API Key）
-│   ├── requirements.txt        # Python 依赖
-│   └── app/
-│       ├── main.py            # 应用入口
-│       ├── core/              # 核心模块（配置、安全、依赖注入）
-│       ├── db/                # 数据库（SQLite + SQLAlchemy）
-│       ├── models/            # 数据模型（7个表）
-│       ├── schemas/           # 请求/响应模型
-│       ├── services/          # 业务逻辑 + LLM Prompt
-│       └── api/v1/            # API 路由（6个模块）
-│
-└── frontend/                   # 前端 (Vue3 + Element Plus)
-    ├── vite.config.js         # Vite 配置（含开发代理）
-    └── src/
-        ├── api/               # API 请求层
-        ├── router/            # 路由配置
-        ├── stores/            # Pinia 状态管理
-        ├── layouts/           # 布局组件
-        └── views/             # 页面组件（10个）
-```
 
 ---
 
@@ -296,5 +270,3 @@ PYTHONPATH=. python -m uvicorn app.main:app --port 8000 --reload
 ### Q: 前端页面空白
 
 确保后端已启动且运行在 8000 端口，前端的开发代理会将 `/api` 请求转发到后端。
-#   a i - c o m m - c o a c h  
- 
